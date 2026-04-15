@@ -1,14 +1,12 @@
 import Home from './components/pages/Home'
-import Container from './components/layout/Container';
+import Board from './components/layout/Board/Board';
 
 function App() {
   return (
     <div className="App">
       <>
-        <Container>
           <Home/>
-        </Container>
-         
+          <Board />
       </>
      
     </div>
