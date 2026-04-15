@@ -1,0 +1,25 @@
+.board {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.button {
+  margin: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.createChart{
+  background-color:#572E9C;
+  border:none;
+  border-radius: 200px;
+  width:200px;
+  height:50px;
+  color:white;
+  font-size:larger;
+}
