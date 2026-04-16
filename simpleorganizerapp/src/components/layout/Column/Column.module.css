@@ -1,0 +1,48 @@
+  .column {
+    min-width: 280px;
+    background-color:#454545; 
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    height: fit-content;
+  }
+
+.input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #454545;
+  outline: none;
+  color: white;
+  resize: none;
+  overflow: hidden;
+  font-family: inherit;
+  width: 100%;
+}
+
+.input:focus {
+  border-bottom: 2px solid #000000; /* muda cor ao clicar */
+}
+
+
+.button {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.deleteColumnBtn{
+  background-color:rgb(199, 33, 33);
+  color:white;
+  border: none;
+  border-radius:20px;
+  font-size:medium;
+}
+
+.deleteColumnBtn:hover{
+  background-color:rgb(255, 134, 134);
+}

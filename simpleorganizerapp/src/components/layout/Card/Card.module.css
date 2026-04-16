@@ -1,0 +1,23 @@
+.card {
+  padding: 10px;
+  border-radius: 8px;
+  color: rgb(255, 255, 255) !important;
+  width: 100%;
+  background-color: #333; 
+  overflow-wrap: break-word; 
+  white-space: pre-wrap; 
+  max-width: 250px;
+}
+
+.deleteBtn{
+  background-color:rgb(199, 33, 33);
+  color:white;
+  border: none;
+  border-radius:20px;
+  font-size:medium;
+}
+
+.deleteBtn:hover{
+
+  background-color:rgb(255, 134, 134);
+}

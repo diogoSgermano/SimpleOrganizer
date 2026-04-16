@@ -27,13 +27,33 @@ export default function Board() {
     );
   }
 
+  function deleteColumn(columnId) {
+    setColumns(columns.filter((col) => col.id !== columnId));
+  }
+
+  function deleteCard(columnId, cardIndex) {
+    setColumns(
+      columns.map((col) =>
+        col.id === columnId
+          ? { ...col, cards: col.cards.filter((_, index) => index !== cardIndex) }
+          : col
+      )
+    );
+  }
+
   return (
     <div>
       <button className={styles.createChart} onClick={addColumn}>+ Criar quadro</button>
 
       <div className={styles.board}>
         {columns.map((col) => (
-          <Column key={col.id} column={col} addCard={addCard} />
+          <Column
+            key={col.id}
+            column={col}
+            addCard={addCard}
+            deleteColumn={deleteColumn}
+            deleteCard={deleteCard}
+          />
         ))}
       </div>
     </div>
