@@ -50,7 +50,7 @@ export default function Column({ column, addCard, deleteColumn, deleteCard }) {
         rows="1"
       />
 
-      <button
+      <button className={styles.btnAddTask}
         onClick={() => {
           addCard(column.id, input);
           setInput("");
