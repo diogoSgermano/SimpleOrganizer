@@ -53,5 +53,6 @@
   border-radius:30px;
   color:white;
   font-size:medium;
-  padding:0.2em;
+  padding: 0.5em 1.5em;
+  align-self: center;
 }
