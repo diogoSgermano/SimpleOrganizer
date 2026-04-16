@@ -14,13 +14,20 @@ export default function Column({ column, addCard, deleteColumn, deleteCard }) {
     }
   }, [input]);
 
+  const handleDeleteColumn = () => {
+    const confirmExclusion = window.confirm("Tem certeza que deseja excluir este quadro?");
+    if (confirmExclusion) {
+      deleteColumn(column.id);
+    }
+  };
+
   return (
     <div className={styles.column}>
       <div className={styles.header}>
         <h3 className={styles.name}>{column.title}</h3>
         <button 
           className={styles.deleteColumnBtn} 
-          onClick={() => deleteColumn(column.id)}
+          onClick={handleDeleteColumn}
         >
           Deletar quadro
         </button>
